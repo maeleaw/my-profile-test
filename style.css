@@ -1,0 +1,118 @@
+/*Colors and fonts*/ 
+body {
+background : #F7F9FC;
+color: rgb(50,50,50);
+font-family: 'Lora', serif;
+font-size: 17px;
+font-weight:lighter;
+}
+
+/*pour par une sélection groupée de plusieurs sélecteurs*/
+h1,h2,h3{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: #16325B;
+	font-size: 20px;
+	font-family:'Arial', sans-serif;
+}
+
+h2 {
+	color: #227B94;
+	font-size: 20px;
+	font-weight:lighter;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none; /*pour supprimer le surline du lien*/
+	font-family: 'Roboto', sans-serif;
+	color: #FFDC7F;
+	font-weight: 600;
+	font-size: 16px;
+}
+/*changer la couleur quand la souris overlay le lien*/
+a:hover {
+	color: #16325B;
+} 
+
+/*on peut custom le design avec des class. ça fait 99% du design*/
+/*custom design with class*/
+.container {
+	width: 1000px;
+	margin: 45px auto;
+}
+
+@media (max-width: 980px) {
+	/*pour screen <980px, c'est le style appliqué*/
+		.container {
+			width: 800px;
+		}
+	}
+
+@media (max-width: 760px) {
+/*pour screen <760px, c'est le style appliqué*/
+	.container {
+		width: 600px;
+	}
+}
+
+@media (max-width: 500px) {
+/*pour screen <500px, c'est le style appliqué*/
+	.container {
+		width: 400px;
+	}
+}
+
+.card-white {
+	background-color: #78B7D0;
+	padding: 40px;
+	border-radius: 4px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	margin: 20px 0px;
+	text-align: justify left;
+}
+.card-white input {
+	border: 1px solid #6B72E1;
+	border-radius: 4px;
+}
+
+.img-circle {
+	border-radius: 50%;
+	border: 3px solid #16325B
+}
+
+.btn-blue {
+	background-color:#227B94 ;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 6px;
+}
+.btn-blue:hover {
+	background-color: black;
+	color: white;
+}
+
+.list-inline {
+	list-style: none; /*bullet points KO*/
+	padding-left: 0px; /*left padding KO*/
+}
+.list-inline li {
+	display: inline;
+	padding: 10px;
+}
+.list-inline i {
+	font-size: 50px;
+	color: rgb(230, 230, 230);
+}
+.list-inline i:hover {
+	color: rgb(0, 0, 0);
+}
+
+
+#introduction p {
+/*for very specific ajustment of the design using id*/
+	margin-bottom: 40px;
+}
+
